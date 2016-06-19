@@ -1,6 +1,6 @@
 # HedwigSonar
 
-**TODO: Add description**
+Work in Progress. Not quite ready for production. 
 
 ## Installation
 
@@ -21,4 +21,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:hedwig_sonar]]
     end
     ```
-
