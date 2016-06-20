@@ -29,7 +29,10 @@ defmodule HedwigSonar.Mixfile do
   defp deps do
     [
       {:hedwig, github: "hedwig-im/hedwig"},
-      {:ex_sonar, "~> 0.1.0"}
+      {:ex_sonar, "~> 0.1.0"},
+      {:httpoison, "~> 0.8.0"},
+      {:cowboy, "~> 1.0", optional: true},
+      {:plug, "~> 1.1", optional: true}
     ]
   end
 end
