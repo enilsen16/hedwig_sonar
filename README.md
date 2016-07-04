@@ -1,6 +1,6 @@
 # HedwigSonar
 
-Work in Progress. Not quite ready for production.
+Work in Progress...
 
 ## Installation
 

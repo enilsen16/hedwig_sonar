@@ -42,7 +42,7 @@ defmodule HedwigSonar.Mixfile do
   defp package do
     [
       files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
-      name: :ex_sonar,
+      name: :hedwig_sonar,
       maintainers: ["Erik Nilsen"],
       licenses: ["MIT"],
       links: %{
