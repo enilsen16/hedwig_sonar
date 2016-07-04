@@ -5,6 +5,8 @@ defmodule HedwigSonar.Mixfile do
     [app: :hedwig_sonar,
      version: "0.1.0",
      elixir: "~> 1.3",
+     description: description(),
+     package: package(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -36,4 +38,22 @@ defmodule HedwigSonar.Mixfile do
       {:plug, "~> 1.1", optional: true}
     ]
   end
+
+  defp package do
+    [
+      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      name: :ex_sonar,
+      maintainers: ["Erik Nilsen"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/enilsen16/hedwig_sonar",
+      }
+    ]
+  end
+
+  defp description do
+    """
+    SendSonar Webhooks + Hedwig
+    """
+end
 end
