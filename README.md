@@ -13,11 +13,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [{:hedwig_sonar, "~> 0.1.0"}]
     end
     ```
-
-  2. Ensure `hedwig_sonar` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:hedwig_sonar]]
-    end
-    ```
