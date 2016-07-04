@@ -20,7 +20,8 @@ use Mix.Config
 #
 #     config :logger, level: :info
 #
-
+config :ex_sonar, Sonar,
+  environment_name: Mix.env
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment
 # by uncommenting the line below and defining dev.exs, test.exs and such.

@@ -4,7 +4,7 @@ defmodule HedwigSonar.Mixfile do
   def project do
     [app: :hedwig_sonar,
      version: "0.1.0",
-     elixir: "~> 1.4-dev",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -14,7 +14,7 @@ defmodule HedwigSonar.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :ex_sonar, :httpoison]]
   end
 
   # Dependencies can be Hex packages:
@@ -29,7 +29,11 @@ defmodule HedwigSonar.Mixfile do
   defp deps do
     [
       {:hedwig, github: "hedwig-im/hedwig"},
-      {:ex_sonar, "~> 0.1.0"}
+      {:ex_sonar, "~> 1.0.0"},
+      {:poison, "~> 2.0"},
+      {:httpoison, "~> 0.8"},
+      {:cowboy, "~> 1.0", optional: true},
+      {:plug, "~> 1.1", optional: true}
     ]
   end
 end
