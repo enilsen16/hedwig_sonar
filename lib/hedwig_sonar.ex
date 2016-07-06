@@ -53,6 +53,7 @@ defmodule Hedwig.Adapters.Sonar do
           email: body["customer"]["email"],
           fb_id: body["customer"]["fb_id"],
           first_name: body["customer"]["first_name"],
+          first_name: body["customer"]["last_name"],
           phone_number: body["customer"]["phone_number"]
         # first_name: body["user"]["first_name"],
         # last_name: body["user"]["last_name"],
