@@ -37,7 +37,6 @@ defmodule Hedwig.Adapters.Sonar do
   end
 
   defp build_message(body) do
-    IO.inspect body
     %Hedwig.Message{
       ref: make_ref(),
       # action: body["action"],
@@ -65,6 +64,6 @@ defmodule Hedwig.Adapters.Sonar do
   end
 
   defp send_message(phone_number, body) do
-    IO.inspect ExSonar.Messages.send("2535496686", "Hello")
+    ExSonar.Messages.send(phone_number, body)
   end
 end
