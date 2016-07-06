@@ -3,7 +3,7 @@ defmodule HedwigSonar.Mixfile do
 
   def project do
     [app: :hedwig_sonar,
-     version: "0.1.0",
+     version: "0.1.1",
      elixir: "~> 1.3",
      description: description(),
      package: package(),
@@ -41,7 +41,7 @@ defmodule HedwigSonar.Mixfile do
 
   defp package do
     [
-      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*"],
       name: :hedwig_sonar,
       maintainers: ["Erik Nilsen"],
       licenses: ["MIT"],
