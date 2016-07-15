@@ -3,7 +3,7 @@ defmodule HedwigSonar.Mixfile do
 
   def project do
     [app: :hedwig_sonar,
-     version: "0.1.3",
+     version: "0.1.4",
      elixir: "~> 1.3",
      description: description(),
      package: package(),
