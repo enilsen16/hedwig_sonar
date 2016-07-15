@@ -16,7 +16,7 @@ defmodule HedwigSonar.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :ex_sonar, :httpoison]]
+    [applications: [:logger, :ex_sonar, :httpoison, :hedwig, :poison]]
   end
 
   # Dependencies can be Hex packages:
