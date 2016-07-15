@@ -3,7 +3,7 @@ defmodule HedwigSonar.Mixfile do
 
   def project do
     [app: :hedwig_sonar,
-     version: "0.1.4",
+     version: "0.1.5",
      elixir: "~> 1.3",
      description: description(),
      package: package(),
@@ -16,7 +16,7 @@ defmodule HedwigSonar.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :ex_sonar, :httpoison, :hedwig, :poison]]
+    [applications: [:logger, :ex_sonar, :httpoison, :hedwig, :poison, :plug]]
   end
 
   # Dependencies can be Hex packages:
