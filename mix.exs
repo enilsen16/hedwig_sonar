@@ -52,7 +52,7 @@ defmodule HedwigSonar.Mixfile do
 
   defp description do
     """
-    SendSonar Webhooks + Hedwig
+    @sendsonar webhooks + hedwig
     """
 end
 end
