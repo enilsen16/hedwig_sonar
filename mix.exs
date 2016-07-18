@@ -34,8 +34,8 @@ defmodule HedwigSonar.Mixfile do
       {:ex_sonar, "~> 1.0.0"},
       {:poison, "~> 2.0"},
       {:httpoison, "~> 0.8"},
-      {:cowboy, "~> 1.0", optional: true},
-      {:plug, "~> 1.1", optional: true}
+      {:plug, "~> 1.1"},
+      {:cowboy, "~> 1.0"}
     ]
   end
 
